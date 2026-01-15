@@ -9,44 +9,31 @@ public class Empleado extends Persona {
         this.antiguedadAnios = antiguedadAnios;
     }
     
-    /**
-     * Calcula el salario del empleado.
-     */
+    
     public double calcularSalario() {
         return salarioBase;
     }
     
-    /**
-     * Obtiene el salario base
-     */
     public double getSalarioBase() {
         return salarioBase;
     }
     
-    /**
-     * Establece el salario base
-     */
+    
     public void setSalarioBase(double salarioBase) {
         this.salarioBase = salarioBase;
     }
     
-    /**
-     * Obtiene los años de antigüedad
-     */
+    
     public int getAntiguedadAnios() {
         return antiguedadAnios;
     }
     
-    /**
-     * Establece los años de antigüedad
-     */
+    
     public void setAntiguedadAnios(int antiguedadAnios) {
         this.antiguedadAnios = antiguedadAnios;
     }
     
-    /**
-     * Sobrescribe el método toString() para mostrar información del empleado
-     */
+    
     @Override
     public String toString() {
         return "Empleado: " + getNombre() + 
@@ -56,9 +43,7 @@ public class Empleado extends Persona {
                ", Salario base: " + salarioBase + "€";
     }
     
-    /**
-     * Sobrescribe el método presentarse() de Persona
-     */
+    
     @Override
     public String presentarse() {
         return super.presentarse() + 
