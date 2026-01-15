@@ -3,7 +3,7 @@ public class Desarrollador extends Empleado {
     private String lenguajePrincipal;
 
     public Desarrollador(String dni, String nombre, int edad, double salario, int antiguedadAnios, String lenguajePrincipal){
-        super (dni, edad, salario, antiguedadAnios, lenguajePrincipal);
+        super (dni, nombre, edad, salario, antiguedadAnios);
         this.lenguajePrincipal = lenguajePrincipal;
     }
 
@@ -11,7 +11,7 @@ public class Desarrollador extends Empleado {
         return lenguajePrincipal;
     }
 
-    public String setLenguajePrincipal(String lenguajePrincipal){
+    public void setLenguajePrincipal(String lenguajePrincipal){
         this.lenguajePrincipal = lenguajePrincipal;
     }
 
